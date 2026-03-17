@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Soulful Loops | Vintage Handmade Crochet</title>
+<meta name="description" content="Soulful Loops — handmade crochet pieces, macramé, and floral keychains crafted with love. Custom orders welcome via WhatsApp.">
+<meta property="og:title" content="Soulful Loops | Vintage Handmade Crochet">
+<meta property="og:description" content="Handcrafted crochet pieces made slowly, intentionally, and with love woven into every stitch.">
+<meta property="og:image" content="logo.png">
+<meta property="og:type" content="website">
+
+<link rel="icon" type="image/png" href="logo.png">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+/* ===== Vintage Color Palette ===== */
+/* parchment, antique cream, dusty brown, sage */
+
+body{
+margin:0;
+font-family:'Playfair Display', serif;
+color:#4a3b2f;
+background-color:#efe6d8;
+background-image:url('paper-texture.png');
+background-size:500px;
+background-repeat:repeat;
+}
+
+
+/* ===== Header ===== */
+
+header{
+text-align:center;
+padding:30px 20px 12px;
+background:#fbf7f0;
+box-shadow:0 3px 12px rgba(0,0,0,0.06);
+position:sticky;
+top:0;
+z-index:100;
+border-bottom:1px solid #e3d8c9;
+}
+
+.logo{
+height:180px;
+margin-bottom:10px;
+}
+
+nav{
+display:flex;
+justify-content:center;
+gap:40px;
+padding-bottom:10px;
+}
+
+nav a{
+text-decoration:none;
+font-family:'Dancing Script',cursive;
+font-size:22px;
+color:#6c5646;
+transition:.3s;
+}
+
+nav a:hover{color:#a27b5c}
+
+/* ===== Hero ===== */
+
+.hero{
+min-height:80vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:90px 20px;
+background:linear-gradient(180deg,rgba(247,241,231,0.72),rgba(239,229,214,0.72));
+}
+
+.hero h1{
+font-family:'Dancing Script',cursive;
+font-size:42px;
+margin-bottom:15px;
+color:#5b4635;
+}
+
+.hero p{
+font-size:18px;
+max-width:700px;
+margin:0 auto;
+line-height:1.7;
+}
+
+.hero p{
+max-width:820px;
+font-size:20px;
+line-height:1.8;
+}
+
+.cta{
+margin-top:40px;
+background:#8c6a52;
+color:white;
+padding:16px 36px;
+border-radius:40px;
+text-decoration:none;
+font-family:'Dancing Script',cursive;
+font-size:24px;
+box-shadow:0 8px 18px rgba(0,0,0,0.15);
+transition:.3s;
+}
+
+.cta:hover{
+transform:translateY(-3px);
+background:#6f523e;
+}
+
+/* ===== Sections ===== */
+
+.section{
+padding:100px 30px;
+text-align:center;
+}
+
+.section-title{
+font-family:'Dancing Script',cursive;
+font-size:50px;
+margin-bottom:60px;
+color:#5a4634;
+}
+
+/* ===== Products ===== */
+
+.product-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:40px;
+max-width:1200px;
+margin:auto;
+}
+
+.product-card{
+background:#fffdf9;
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+transition:.35s;
+border:1px solid #e8dccb;
+}
+
+.product-card:hover{
+transform:translateY(-8px);
+box-shadow:0 18px 35px rgba(0,0,0,0.12);
+}
+
+.product-card img{
+width:100%;
+height:280px;
+object-fit:cover;
+}
+
+.product-card{position:relative;}
+
+.badge{
+position:absolute;
+top:15px;
+left:15px;
+background:#6f7b64;
+color:white;
+padding:6px 12px;
+border-radius:20px;
+font-size:13px;
+font-family:'Playfair Display',serif;
+}
+
+.product-desc{
+font-size:15px;
+color:#6b5a48;
+line-height:1.6;
+margin-bottom:16px;
+}
+
+.product-info{padding:24px}
+
+.product-info h3{
+font-family:'Dancing Script',cursive;
+font-size:28px;
+margin-bottom:10px;
+}
+
+.price{
+font-size:19px;
+color:#7b624f;
+margin-bottom:18px;
+}
+
+.btn{
+background:#6f7b64;
+color:white;
+padding:12px 26px;
+border-radius:30px;
+text-decoration:none;
+font-family:'Dancing Script',cursive;
+font-size:20px;
+}
+
+.btn:hover{background:#56614f}
+
+/* ===== Story ===== */
+
+.story{
+max-width:850px;
+margin:auto;
+font-size:21px;
+line-height:1.9;
+}
+
+/* ===== Gallery ===== */
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:18px;
+max-width:1100px;
+margin:auto;
+}
+
+.gallery img{
+width:100%;
+border-radius:12px;
+transition:.4s;
+border:2px dashed #c2a878;
+padding:6px;
+background:#f8f3ea;
+box-shadow:0 4px 14px rgba(0,0,0,0.08);
+}
+
+.gallery img:hover{transform:scale(1.05);box-shadow:0 8px 22px rgba(0,0,0,0.14);}
+
+/* ===== Testimonials ===== */
+
+.review{
+max-width:720px;
+margin:30px auto;
+font-size:20px;
+font-style:italic;
+color:#5c4d3f;
+}
+
+.stars{
+color:#c2a050;
+font-size:22px;
+margin-bottom:6px;
+font-style:normal;
+}
+
+.reviewer{
+font-size:15px;
+font-style:normal;
+color:#8a7060;
+margin-top:8px;
+}
+
+/* ===== Footer ===== */
+
+footer{
+background:#e9dfd2;
+padding:70px 20px;
+text-align:center;
+margin-top:80px;
+border-top:1px solid #d8cbbb;
+}
+
+.footer-text{
+font-family:'Dancing Script',cursive;
+font-size:32px;
+color:#5a4635;
+margin-bottom:12px;
+}
+
+.footer-small{
+font-size:16px;
+color:#6b5a48
+}
+
+/* ===== Hamburger Menu ===== */
+.hamburger{
+display:none;
+flex-direction:column;
+gap:5px;
+cursor:pointer;
+position:absolute;
+right:20px;
+top:24px;
+z-index:200;
+}
+
+.hamburger span{
+width:26px;
+height:3px;
+background:#6c5646;
+border-radius:3px;
+transition:.3s;
+}
+
+.hamburger.open span:nth-child(1){transform:rotate(45deg) translate(5px,6px);}
+.hamburger.open span:nth-child(2){opacity:0;}
+.hamburger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-6px);}
+
+@media(max-width:768px){
+.hero h1{font-size:36px}
+.hamburger{display:flex;}
+nav{
+  display:none;
+  flex-direction:column;
+  align-items:center;
+  gap:18px;
+  background:#fbf7f0;
+  padding:20px 0 24px;
+  border-top:1px solid #e3d8c9;
+}
+nav.open{display:flex;}
+header{position:relative;}
+}
+
+
+/* Crochet thread divider */
+.divider{
+width:100%;
+height:100px;
+background-image:url('crochet-divider.png');
+background-repeat:repeat-x;
+background-position:center;
+background-size:auto 100px;
+opacity:1;
+margin:40px 0;
+}
+
+
+/* Floating yarn background pattern */
+body::before{
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background-image:url('yarn-pattern.png');
+background-size:600px;
+background-repeat:repeat;
+opacity:0.12;
+pointer-events:none;
+animation:floatYarn 60s linear infinite;
+}
+
+@keyframes floatYarn{
+0%{transform:translateY(0px);} 
+50%{transform:translateY(-40px);} 
+100%{transform:translateY(0px);} 
+}
+
+/* Vintage stitched product cards */
+.product-card{
+border:2px dashed #c2a878;
+padding:20px;
+border-radius:12px;
+background:#f8f3ea;
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+transition:transform .3s ease, box-shadow .3s ease;
+}
+
+/* Elegant hover animation */
+.product-card:hover{
+transform:translateY(-8px) scale(1.02);
+box-shadow:0 16px 30px rgba(0,0,0,0.15);
+}
+
+.product-card img{
+transition:transform .4s ease;
+border-radius:8px;
+}
+
+.product-card:hover img{
+transform:scale(1.05);
+}
+
+/* ===== About ===== */
+.about-wrap{
+display:flex;
+align-items:center;
+gap:60px;
+max-width:900px;
+margin:auto;
+text-align:left;
+}
+
+.about-photo{
+width:220px;
+height:220px;
+border-radius:50%;
+object-fit:cover;
+border:4px dashed #c2a878;
+padding:6px;
+background:#f8f3ea;
+flex-shrink:0;
+box-shadow:0 8px 24px rgba(0,0,0,0.1);
+}
+
+.about-photo-placeholder{
+width:220px;
+height:220px;
+border-radius:50%;
+border:4px dashed #c2a878;
+background:#f8f3ea;
+flex-shrink:0;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:14px;
+color:#a27b5c;
+text-align:center;
+padding:20px;
+font-family:'Dancing Script',cursive;
+font-size:18px;
+}
+
+.about-text{font-size:19px;line-height:1.9;}
+
+@media(max-width:768px){
+.about-wrap{flex-direction:column;text-align:center;}
+}
+
+/* ===== Contact Form ===== */
+.contact-form{
+max-width:600px;
+margin:30px auto 0;
+display:flex;
+flex-direction:column;
+gap:16px;
+text-align:left;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea{
+width:100%;
+padding:14px 18px;
+border:2px solid #d8c9b5;
+border-radius:12px;
+background:#fffdf9;
+font-family:'Playfair Display',serif;
+font-size:16px;
+color:#4a3b2f;
+outline:none;
+transition:border-color .3s;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus{border-color:#a27b5c;}
+
+.contact-form textarea{resize:vertical;min-height:120px;}
+
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+
+@media(max-width:600px){.form-row{grid-template-columns:1fr;}}
+
+.form-submit{
+background:#8c6a52;
+color:white;
+border:none;
+padding:15px 36px;
+border-radius:40px;
+font-family:'Dancing Script',cursive;
+font-size:22px;
+cursor:pointer;
+align-self:center;
+box-shadow:0 8px 18px rgba(0,0,0,0.12);
+transition:.3s;
+}
+
+.form-submit:hover{background:#6f523e;transform:translateY(-2px);}
+
+/* ===== Lightbox ===== */
+#lightbox{
+display:none;
+position:fixed;
+inset:0;
+background:rgba(0,0,0,0.82);
+z-index:999;
+justify-content:center;
+align-items:center;
+}
+
+#lightbox.active{display:flex;}
+
+#lightbox img{
+max-width:90vw;
+max-height:88vh;
+border-radius:12px;
+border:3px solid #c2a878;
+box-shadow:0 20px 60px rgba(0,0,0,0.5);
+}
+
+#lightbox-close{
+position:absolute;
+top:20px;
+right:28px;
+font-size:38px;
+color:#f8f3ea;
+cursor:pointer;
+line-height:1;
+font-family:sans-serif;
+}
+
+/* Handwritten footer signature */
+.signature{
+font-family:'Dancing Script', cursive;
+font-size:28px;
+margin-top:10px;
+color:#7a5c46;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<img src="logo.png" class="logo" alt="Soulful Loops logo">
+<div class="hamburger" id="hamburger" onclick="this.classList.toggle('open');document.getElementById('nav').classList.toggle('open')">
+  <span></span><span></span><span></span>
+</div>
+<nav id="nav">
+<a href="#shop">Shop</a>
+<a href="#story">Story</a>
+<a href="#gallery">Gallery</a>
+<a href="#reviews">Reviews</a>
+<a href="#contact">Order</a>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Where Every Loop Tells a Story</h1>
+<p>
+At Soulful Loops, we believe the most beautiful things in life are made by hand, slowly, intentionally, and with love woven into every stitch. From dreamy crochet pieces to delicate macramé and flowers that never fade, each creation is a little piece of someone's heart made tangible.
+<br><br>
+Welcome. You're in the right place.
+</p>
+<a class="cta" href="#shop">Explore Handmade Creations</a>
+</section>
+<div class="divider"></div>
+
+<section class="section" id="shop">
+<div class="section-title">Featured Creations</div>
+
+<div class="product-grid">
+
+<div class="product-card">
+<span class="badge">Bestseller</span>
+<img src="product1.png" alt="Crochet Table Decor">
+<div class="product-info">
+<h3>Crochet Table Decor</h3>
+<div class="product-desc">A delicate handcrafted piece to add warmth and vintage charm to any tabletop or shelf.</div>
+<div class="price">₹899</div>
+<a class="btn" href="#contact">Order Now</a>
+</div>
+</div>
+
+<div class="product-card">
+<span class="badge">Made to Order</span>
+<img src="product2.png" alt="Floral Crochet Keychain">
+<div class="product-info">
+<h3>Floral Crochet Keychain</h3>
+<div class="product-desc">Sweet little floral keychains — perfect as gifts or everyday accessories. Available in custom colours.</div>
+<div class="price">₹299</div>
+<a class="btn" href="#contact">Order Now</a>
+</div>
+</div>
+
+<div class="product-card">
+<span class="badge">New Arrival</span>
+<img src="product3.png" alt="Crochet Hat and Scarf">
+<div class="product-info">
+<h3>Crochet Hat & Scarf</h3>
+<div class="product-desc">A cosy handmade set crafted with soft yarn — keep warm in style this season.</div>
+<div class="price">₹1199</div>
+<a class="btn" href="#contact">Order Now</a>
+</div>
+</div>
+
+</div>
+</section>
+<div class="divider"></div>
+
+<section class="section" id="story">
+<div class="section-title">The Soulful Loops Story</div>
+<div class="about-wrap">
+  <div class="about-photo-placeholder">Add your photo here</div>
+  <div class="about-text">
+    Soulful Loops began as a quiet love for yarn and creativity. Every loop, every stitch, and every pattern is handcrafted slowly with patience and intention.
+    <br><br>
+    In a world of mass production, we celebrate the beauty of handmade craft — pieces that feel warm, personal, and deeply meaningful. Each creation carries a little piece of heart, made tangible through thread and time.
+  </div>
+</div>
+</section>
+<div class="divider"></div>
+
+<section class="section" id="gallery">
+<div class="section-title">Handmade Gallery</div>
+<div class="gallery">
+<img src="product1.png" alt="Crochet Table Decor" loading="lazy">
+<img src="product2.png" alt="Floral Crochet Keychain" loading="lazy">
+<img src="product3.png" alt="Crochet Hat and Scarf" loading="lazy">
+<img src="product1.png" alt="Crochet Table Decor detail" loading="lazy">
+<img src="product2.png" alt="Floral Crochet Keychain detail" loading="lazy">
+<img src="product3.png" alt="Crochet Hat and Scarf detail" loading="lazy">
+</div>
+</section>
+<div class="divider"></div>
+
+<section class="section" id="reviews">
+<div class="section-title">Customer Love</div>
+<div class="review">
+  <div class="stars">★★★★★</div>
+  "Absolutely beautiful handmade work. You can feel the love in every stitch."
+  <div class="reviewer">— Priya M.</div>
+</div>
+<div class="review">
+  <div class="stars">★★★★★</div>
+  "Perfect gift and such amazing craftsmanship. Highly recommend Soulful Loops."
+  <div class="reviewer">— Ananya R.</div>
+</div>
+<div class="review">
+  <div class="stars">★★★★★</div>
+  "Ordered a custom keychain for my best friend's birthday — she absolutely loved it. The quality is stunning!"
+  <div class="reviewer">— Meera K.</div>
+</div>
+<div class="review">
+  <div class="stars">★★★★★</div>
+  "The crochet table decor looks straight out of a magazine. So elegant and unique. Will definitely order again."
+  <div class="reviewer">— Sneha T.</div>
+</div>
+</section>
+<div class="divider"></div>
+
+<section class="section" id="contact">
+<div class="section-title">Custom Orders</div>
+<p style="font-size:20px;margin-bottom:25px">Want something special? We happily create custom crochet pieces just for you.</p>
+<form class="contact-form" onsubmit="handleOrder(event)">
+  <div class="form-row">
+    <input type="text" placeholder="Your Name" required>
+    <input type="tel" placeholder="Phone / WhatsApp Number" required>
+  </div>
+  <select required>
+    <option value="" disabled selected>What are you interested in?</option>
+    <option>Crochet Table Decor</option>
+    <option>Floral Crochet Keychain</option>
+    <option>Crochet Hat & Scarf</option>
+    <option>Custom / Other</option>
+  </select>
+  <textarea placeholder="Tell us about your idea, colour preferences, size, or any special requests..."></textarea>
+  <button type="submit" class="form-submit">Send via WhatsApp</button>
+</form>
+</section>
+<div class="divider"></div>
+
+<footer>
+<div class="footer-text">Soulful Loops ~ Handcrafted with love, made to be felt.</div>
+<div class="footer-small">© Soulful Loops Handmade Crochet</div>
+<div class="signature">With love, Soulful Loops</div>
+</footer>
+
+<div id="lightbox">
+  <span id="lightbox-close" onclick="document.getElementById('lightbox').classList.remove('active')">&times;</span>
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script>
+function handleOrder(e){
+  e.preventDefault();
+  const f=e.target;
+  const name=f.querySelector('input[type=text]').value;
+  const phone=f.querySelector('input[type=tel]').value;
+  const product=f.querySelector('select').value;
+  const msg=f.querySelector('textarea').value;
+  const text=`Hi Soulful Loops! 🧶\nName: ${name}\nPhone: ${phone}\nInterested in: ${product}\nMessage: ${msg}`;
+  window.open('https://wa.me/your-number?text='+encodeURIComponent(text),'_blank');
+}
+
+document.querySelectorAll('.gallery img').forEach(img=>{
+  img.style.cursor='zoom-in';
+  img.addEventListener('click',()=>{
+    document.getElementById('lightbox-img').src=img.src;
+    document.getElementById('lightbox-img').alt=img.alt;
+    document.getElementById('lightbox').classList.add('active');
+  });
+});
+document.getElementById('lightbox').addEventListener('click',function(e){
+  if(e.target===this) this.classList.remove('active');
+});
+
+document.querySelectorAll('nav a').forEach(a=>{
+  a.addEventListener('click',()=>{
+    document.getElementById('nav').classList.remove('open');
+    document.getElementById('hamburger').classList.remove('open');
+  });
+});
+</script>
+</body>
+</html>
+
+

@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c \":*)",
+      "Bash(python -c \":*)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8080)",
+      "Read(//c/Users/sandeep.varma/**)",
+      "Bash(powershell Compress-Archive -Path \"SoulfulLoops/*\" -DestinationPath \"Downloads/SoulfulLoops_dev.zip\" -Force)",
+      "Bash(powershell \"\\(Get-ChildItem ''C:/Users/sandeep.varma/Downloads/SoulfulLoops_dev.zip''\\).Length / 1KB\")",
+      "Bash(gh auth:*)"
+    ]
+  }
+}
